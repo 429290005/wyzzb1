@@ -1,0 +1,213 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="divider_line">
+        <item name="android:background">#d6d6d6</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.70000005dip</item>
+    </style>
+    <style name="common_list_tip_text_style">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#ff999999</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="course_confirm_edit_text">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#404040</item>
+        <item name="android:textColorHint">#808080</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:paddingLeft">5.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="CommonDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/smssdk_dialog_bg</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="layout_order_info">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="course_confirm_item_title">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#404040</item>
+        <item name="android:paddingTop">12.0dip</item>
+        <item name="android:paddingBottom">12.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="video_progressbar_style">
+        <item name="android:maxWidth">43.0dip</item>
+        <item name="android:maxHeight">43.0dip</item>
+        <item name="android:indeterminateDrawable">@anim/biz_news_detailpage_loading_large_anim
+        </item>
+        <item name="android:minWidth">43.0dip</item>
+        <item name="android:minHeight">43.0dip</item>
+    </style>
+    <style name="myinfo_item_title_style">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#ff555555</item>
+    </style>
+
+    <style name="fragment_list_rl">
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">26.0dip</item>
+        <item name="android:layout_margin">@dimen/page_margin_default</item>
+    </style>
+    <style name="fragment_list_iv_L1">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">@dimen/iv_width_L1</item>
+        <item name="android:layout_height">@dimen/iv_height_L1</item>
+    </style>
+    <style name="fragment_list_iv_L2_r">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">@dimen/iv_width_L2</item>
+        <item name="android:layout_height">@dimen/iv_height_L2</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <style name="fragment_list_spliter_1dp">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/border_list_L2</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/border_list_L1</item>
+        <item name="android:layout_marginLeft">@dimen/page_margin_default</item>
+    </style>
+    <style name="fragment_list_tv_L1">
+        <item name="android:textSize">@dimen/txt_L1_chinese</item>
+        <item name="android:textColor">@color/txt_L1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">36.0dip</item>
+    </style>
+    <style name="TextTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:shadowColor">#00000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">0</item>
+        <item name="android:background">@null</item>
+
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#242424</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextTheme.tipstheme_buttontext">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="TextTheme.tipstheme">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="TextTheme.tipstheme_second">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#888888</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- Application theme. -->
+  
+    <style name="dot_style">
+        <item name="android:layout_width">5dip</item>
+        <item name="android:layout_height">5dip</item>
+        <item name="android:background">@drawable/dot_normal</item>
+        <item name="android:layout_marginLeft">1.5dip</item>
+        <item name="android:layout_marginRight">1.5dip</item>
+    </style>
+
+    <style name="jc_vertical_progressBar">
+        <item name="android:maxWidth">12dp</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:progressDrawable">@drawable/jc_volume_progress_bg</item>
+        <item name="android:indeterminateDuration">3500</item>
+        <item name="android:indeterminateBehavior">repeat</item>
+        <item name="android:minWidth">1dp</item>
+    </style>
+    <style name="jc_popup_toast_anim" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+    <style name="jc_style_dialog_progress" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/jc_popup_toast_anim</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="player_controller_divider">
+        <item name="android:background">#cccccc</item>
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_marginBottom">17dp</item>
+        <item name="android:layout_marginTop">17dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="player_controller_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:drawablePadding">1dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/switcher_item_text_selector</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="switcher_item_text_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/switcher_item_text_selector</item>
+    </style>
+    <style name="ActivityTheme.Full" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/bg_dialog</item>
+    </style>
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/option_selector</item>
+    </style>
+
+<style name="popwin_anim_style">
+<item name="android:windowEnterAnimation">@anim/still</item>
+<item name="android:windowExitAnimation">@anim/still</item>
+</style>
+
+    <style name="perfectinfo_input_style">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">#ff5090c7</item>
+    </style>
+    <style name="perfectinfo_hint_style">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">#9fa0a0</item>
+    </style>
+</resources>

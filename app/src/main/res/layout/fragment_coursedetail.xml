@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dip"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_light"
+            android:minHeight="200dp"
+            android:layout_marginBottom="2dip"
+
+            android:id="@+id/video_fy">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="38dip"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="5dip"
+                android:orientation="horizontal"
+            >
+                <RelativeLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.0">
+                    <TextView
+                        android:id="@+id/actionbar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/white"
+                        android:gravity="center"
+                        android:text=""
+                    />
+
+                    <TextView
+                        android:id="@+id/actionbar_right_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textSize="12sp"
+
+                        android:layout_marginRight="10dp"
+                        android:textColor="@android:color/white"
+                        android:text=""
+                    />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/play_btn"
+                    android:layout_gravity="center"
+                    android:text="试听课程"
+                    android:layout_width="130dip"
+                    android:textSize="13sp"
+                    android:layout_height="30.0dip"
+                    android:background="@drawable/darkred_btn_bg"
+                    android:textColor="@color/base_color_text_white"
+                />
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dip"
+                    android:textSize="13sp"
+                    android:textColor="@color/base_color_text_white"
+                    android:text="十年转本名师助你读二本"/>
+            </LinearLayout>
+
+
+            <com.song.zzb.wyzzb.ui.view.SuperVideoPlayer
+                android:id="@+id/video_player_item_1"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:visibility="gone">
+            </com.song.zzb.wyzzb.ui.view.SuperVideoPlayer>
+
+        </FrameLayout>
+
+        <com.shizhefei.view.largeimage.LongImageView
+            android:id="@+id/imageView"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</ScrollView>

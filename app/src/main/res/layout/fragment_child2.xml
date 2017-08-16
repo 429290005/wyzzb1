@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="@color/color_green_bg3"
+>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/color_theme"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/supplier_list_product"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/supplier_list_product_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="计算机"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:src="@drawable/new_arrow_down" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+
+
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/ly_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment_actionbar"
+                android:background="@color/base_color_text_white"
+                android:orientation="vertical">
+                <RelativeLayout android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/id_test_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="预测分"
+                        android:background="@drawable/guide_round_selector"
+                        android:textColor="@color/color_theme"
+                        android:padding="5dip"
+                        android:textSize="12sp" />
+
+
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/laba"
+                        android:layout_gravity="center_vertical"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dip"
+                        android:layout_toRightOf="@+id/id_test_tv"
+                        android:src="@drawable/laba"/>
+
+                    <com.maning.library.SwitcherView
+                        android:id="@+id/switcherView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/laba"
+                        android:layout_marginLeft="5dip"
+                        app:switcherDefaultText="赶紧刷题吧！小伙伴们"
+                        app:switcherRollingTime="2000"
+                        app:switcherTextColor="@color/color_tab_text"
+                        app:switcherTextSize="9sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/correct_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dip"
+                        android:layout_marginRight="4dip"
+                        android:text="40"
+                        android:textColor="@color/color_theme"
+                        android:textSize="49sp"
+                    />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/action_bar_rly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+                    <TextView
+                        android:id="@+id/actionbar_right_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginRight="4dp"
+                        android:gravity="center"
+                        android:text="/100分"
+                        android:textColor="@color/color_theme"
+                        android:textSize="12sp"
+                    />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="@color/color_green_bg3"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:orientation="horizontal"
+            >
+
+                <LinearLayout
+                    android:id="@+id/ly_base"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dip"
+                    android:layout_weight="1"
+
+                    android:background="@color/base_color_text_white"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dip"
+                        android:layout_marginTop="6dip"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/pencil"
+                        android:gravity="center"
+                        android:text="模拟试题"
+                        android:textColor="@color/color_theme"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+                <include
+                    android:id="@+id/fragment_banner"
+                    layout="@layout/divide_2"
+                />
+                <LinearLayout
+                    android:id="@+id/ly_intensify"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dip"
+                    android:layout_weight="1"
+                    android:background="@color/base_color_text_white"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dip"
+                        android:layout_marginTop="6dip"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/wan"
+
+                        android:gravity="center"
+                        android:text="历年真题"
+                        android:textColor="@color/color_theme"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+                <include
+                    android:id="@+id/fragment_banner"
+                    layout="@layout/divide_2"
+                />
+                <LinearLayout
+                    android:id="@+id/ly_rectie"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dip"
+                    android:layout_weight="1"
+                    android:background="@color/base_color_text_white"
+                    android:gravity="center_horizontal"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dip"
+                        android:layout_marginTop="6dip"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/flagvariant"
+                        android:gravity="center"
+                        android:text="必背考点"
+                        android:textColor="@color/color_theme"
+                        android:textSize="14sp"
+                    />
+                </LinearLayout>
+                <include
+                    android:id="@+id/fragment_banner"
+                    layout="@layout/divide_2"
+                />
+                <LinearLayout
+                    android:id="@+id/ly_sprint"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:background="@color/base_color_text_white"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dip"
+                        android:layout_marginTop="6dip"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/flagvariant"
+                        android:gravity="center"
+                        android:text="错题收藏"
+                        android:textColor="@color/color_theme"
+                        android:textSize="14sp"
+                    />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include
+                android:id="@+id/head"
+                layout="@layout/activity_tiku_top_tab"
+            />
+            <com.song.zzb.wyzzb.ui.view.InsideViewPager
+                android:id="@+id/id_page_vp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/head"
+
+            >
+            </com.song.zzb.wyzzb.ui.view.InsideViewPager>
+
+
+            <LinearLayout
+                android:id="@+id/l_emptylayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="50dip"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:id="@+id/common_load_empty_tipimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:src="@drawable/kaoyan_common_list_null_tip"/>
+                <TextView
+                    android:id="@+id/common_load_empty_tiptext"
+                    style="@style/common_list_tip_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:gravity="center"
+                    android:text="这里什么都没有,点击刷新试试"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:suspend="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical">
+    <include
+        android:id="@+id/fragment_actionbar"
+        layout="@layout/actionbar"
+    />
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_marginBottom="48dip"
+        android:layout_below="@+id/fragment_actionbar">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:id="@+id/img"
+               />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dip"
+                android:layout_marginBottom="6dip"
+                android:layout_marginLeft="15dip"
+                android:id="@+id/title1"
+
+                android:textSize="18sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dip"
+                android:layout_marginBottom="6dip"
+                android:layout_marginLeft="15dip"
+                android:id="@+id/title1dsc"
+
+                android:textSize="14sp"/>
+            <View
+                android:id="@+id/umeng_comm_feeds_frmg_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:background="@color/gray_dddddd" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="6dip"
+                android:layout_marginBottom="6dip"
+                >
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/rules_oriange_ff6600"
+
+                    android:padding="2dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dip"
+                    android:textSize="20sp"
+                    android:layout_centerVertical="true"
+                />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dip"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/pricedsc1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="10dp"
+
+
+                        android:textSize="16sp"
+                        android:layout_centerVertical="true"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/dsc_tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="10dp"
+
+                        android:text="已有"
+                        android:textSize="16sp"
+                        android:layout_centerVertical="true"
+                    />
+                    <TextView
+                        android:id="@+id/pricepeople"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:textColor="@color/rules_oriange_ff6600"
+
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:textSize="16sp"
+                        android:layout_centerVertical="true"
+                    />
+                    <TextView
+                        android:id="@+id/dsc_tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+
+                        android:text="人购买"
+                        android:textSize="16sp"
+
+                        android:layout_centerVertical="true"
+                    />
+                </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <com.song.zzb.wyzzb.util.xlistview.XListView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/list_study"
+                android:scrollbars="none"
+                android:background="@color/color_green_bg3"
+                android:layout_marginLeft="12dip"
+                android:layout_marginRight="12dip"
+
+                android:listSelector="#00000000"
+                android:cacheColorHint="#00000000"
+            >
+            </com.song.zzb.wyzzb.util.xlistview.XListView>
+            <View
+
+                android:layout_width="fill_parent"
+                android:layout_height="7dp"
+                android:background="@color/color_green_bg3" />
+            <include
+                layout="@layout/activity_main_top_tab"
+                     android:id="@+id/head"
+            />
+            <RelativeLayout
+                android:id="@+id/fragment1_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/head"
+            />
+
+        </LinearLayout>
+    </ScrollView>
+    <ImageView
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/detail"
+        android:layout_above="@+id/layout_add_commodity"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginBottom="18.0dip"
+    />
+    <RelativeLayout
+        android:id="@+id/layout_add_commodity"
+        android:background="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="56.0dip"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18.0dip"
+            android:layout_centerVertical="true">
+            <TextView
+                android:textSize="25.0sp"
+                android:id="@+id/text_status"
+
+                android:textColor="@color/rules_oriange_ff6600"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button
+
+            android:id="@+id/button_add"
+            android:textColor="@color/white"
+            android:padding="5.0dip"
+            android:layout_width="86.0dip"
+            android:layout_height="35.0dip"
+            android:layout_marginRight="18.0dip"
+            android:text="购买"
+            android:background="@color/green_888888"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="onClick" />
+        <Button
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@+id/button_counsel"
+
+            android:paddingLeft="8.0dip"
+            android:paddingRight="8.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="35.0dip"
+            android:layout_marginTop="11.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginBottom="11.0dip"
+            android:minWidth="50.0dip"
+            android:text="学员群"
+            android:background="@color/green_888888"
+            android:layout_toLeftOf="@id/button_add"
+            android:layout_centerVertical="true"
+            android:onClick="onClick" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

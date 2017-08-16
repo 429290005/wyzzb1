@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sw"
+        android:layout_width="36.0dip"
+        android:layout_height="36.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="12.0dip"
+        android:layout_alignParentLeft="true"
+        app:placeholderImage="@drawable/morentuf" />
+    <TextView
+        android:textSize="12.0sp"
+        android:textColor="#ff666666"
+        android:id="@+id/sx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginTop="12.0dip"
+        android:text="刘萌萌"
+        android:layout_toRightOf="@+id/sw" />
+    <ImageView
+        android:textSize="12.0sp"
+        android:textColor="#ff666666"
+        android:id="@+id/vip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginTop="12.0dip"
+        android:src="@drawable/hx"
+        android:layout_toRightOf="@+id/sx" />
+    <TextView android:textSize="11.0sp"
+              android:textColor="#ff808080"
+              android:id="@+id/sy"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="8.0dip"
+              android:layout_marginTop="28.0dip"
+              android:text="高级PHP工程师"
+              android:layout_toRightOf="@+id/sw" android:layout_below="@id/sx" />
+    <TextView
+        android:textSize="11.0sp"
+        android:textColor="#ff808080"
+        android:id="@+id/sz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginTop="6.0dip"
+        android:layout_marginBottom="10.0dip"
+        android:text="模仿iOS里面的UIACtionSheet控件，有iOS6和iOS7两种自定义风格，背景图片，按钮图片，文字颜色。"
+        android:layout_toRightOf="@id/sw"
+        android:layout_below="@+id/sy" />
+    <View android:background="#ffe4e4e4"
+          android:layout_width="fill_parent"
+          android:layout_height="1.0px"
+          android:layout_alignParentBottom="true" />
+</RelativeLayout>

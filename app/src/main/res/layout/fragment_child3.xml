@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.song.zzb.wyzzb.fragment.Child2Fragment">
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/activity_tiku_top_tab"
+    />
+    <com.song.zzb.wyzzb.ui.view.InsideViewPager
+        android:id="@+id/id_page_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/head"
+    >
+    </com.song.zzb.wyzzb.ui.view.InsideViewPager>
+
+</LinearLayout>

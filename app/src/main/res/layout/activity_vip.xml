@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginTop="20.0dip"
+        android:layout_marginRight="20.0dip">
+        <ImageView
+            android:id="@+id/oe"
+            android:background="@drawable/me"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="5.0dip"
+            android:layout_weight="1.0" />
+        <ImageView
+            android:id="@+id/of"
+            android:background="@drawable/ot"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5.0dip"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView
+        android:textColor="@color/blue_7386C6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginTop="20.0dip"
+        android:text="月会员专属特权" />
+    <GridView android:id="@+id/og"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="20.0dip"
+              android:layout_marginRight="20.0dip"
+              android:layout_marginTop="20.0dip"
+              android:horizontalSpacing="4.0dip"
+              android:listSelector="@drawable/bk"
+              android:numColumns="4"
+              android:stretchMode="columnWidth"
+              android:verticalSpacing="4.0dip"/>
+    <TextView
+        android:textColor="#fff1d55e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginTop="20.0dip"
+        android:text="年会员专属特权" />
+    <GridView android:id="@+id/oh"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="20.0dip"
+              android:layout_marginTop="20.0dip"
+              android:layout_marginRight="20.0dip"
+              android:listSelector="@drawable/bk"
+              android:horizontalSpacing="4.0dip"
+              android:verticalSpacing="4.0dip"
+              android:stretchMode="columnWidth"
+              android:numColumns="4" />
+</LinearLayout>

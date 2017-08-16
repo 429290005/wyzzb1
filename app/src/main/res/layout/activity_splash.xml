@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <ImageView
+            android:id="@+id/activity_splash_top"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/kaoyan_splash_top_default"
+            android:layout_above="@+id/activity_splash_bottom"
+            android:contentDescription="@null" />
+        <ImageView
+            android:id="@+id/activity_splash_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/kaoyan_splash_bottom"
+
+            android:scaleType="center"
+            android:layout_alignParentBottom="true"
+            android:contentDescription="@null" />
+
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="6"-->
+        <!--android:gravity="center_horizontal" >-->
+
+        <!--<ProgressBar-->
+            <!--android:id="@+id/ac_splash_pb"-->
+            <!--style="?android:attr/progressBarStyleLarge"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/splash_tv_firstLoading"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="14dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/splash_tv_firstLoading"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:text="第一次加载需要较多时间，请耐心等待"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="14sp"-->
+            <!--android:visibility="gone" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/frg_category_item_wdSize"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:text="@string/app_name"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="50sp" />-->
+
+    <!--</RelativeLayout>-->
+
+</FrameLayout>

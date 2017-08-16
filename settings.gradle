@@ -1,0 +1,1 @@
+include ':app', ':mylibrary', ':PushSDK', ':library', ':gesture', ':longImagelibrary', ':jcvideoplayer-lib'

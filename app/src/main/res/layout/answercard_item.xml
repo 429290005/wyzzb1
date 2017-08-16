@@ -1,0 +1,11 @@
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#666666"
+    android:background="@drawable/answer_btn_not_answered"
+    android:textSize="14sp"
+    android:gravity="center"
+    tools:text="0"/>

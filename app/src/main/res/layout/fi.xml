@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginTop="6.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/uw"
+        android:layout_width="129.0dip"
+        android:layout_height="70.0dip"
+        app:placeholderImage="@drawable/jt" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_toRightOf="@+id/uw"
+      >
+        <TextView
+            android:textSize="14.0sp"
+            android:textColor="#ff333333"
+            android:ellipsize="end"
+            android:id="@+id/ux"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16.0dip"
+            android:maxWidth="140.0dip"
+            android:text="iOS就业班"
+            android:singleLine="true" />
+        <TextView
+            android:textSize="14.0sp"
+            android:textColor="#ffff0000"
+            android:id="@+id/uy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:text="1999"
+            android:layout_below="@id/ux" />
+    </LinearLayout>
+    <TextView
+        android:textSize="11.0sp"
+        android:textColor="#ffff0000"
+        android:id="@+id/uz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16.0dip"
+        android:layout_marginRight="10.0dip"
+        android:text="交易成功"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true" />
+    <Button
+        android:textSize="11.0sp"
+        android:textColor="#ffffffff"
+        android:id="@+id/v0"
+        android:background="#ffff0000"
+        android:layout_width="60.0dip"
+        android:layout_height="20.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginBottom="10.0dip"
+        android:text="继续学习"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

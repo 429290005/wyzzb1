@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              >
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_above="@+id/view"
+    />
+    <View
+        android:background="@color/gray_dddddd"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:id="@+id/view"
+        android:layout_above="@+id/bottomNavigatorViewbottomNavigatorView" />
+    <com.song.zzb.wyzzb.widget.BottomNavigatorView
+        android:id="@+id/bottomNavigatorView"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:clipToPadding="false"
+        android:background="@android:color/white"
+        android:elevation="8dp" />
+
+</LinearLayout>

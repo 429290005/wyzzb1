@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        applicationId "com.song.zzb.wyzzb"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi', 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+    }
+    repositories {
+        maven { url "https://jitpack.io" }
+        flatDir{
+            dirs 'libs' //就是你放aar的目录地址
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+    //滚动视图包
+    compile 'com.tencent.bugly:crashreport:latest.release'
+    //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.1.9
+    compile 'com.tencent.bugly:nativecrashreport:latest.release'
+    //其中latest.release指代最新Bugly NDK版本号，也可以指定明确的版本号，例如3.0
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.daimajia.slider:library:1.1.5@aar'
+    compile 'com.daimajia.androidanimations:library:1.0.3@aar'
+    compile 'com.afollestad.material-dialogs:commons:0.8.6.2'
+    compile 'org.litepal.android:core:1.3.1'
+    compile 'cn.bmob.android:http-legacy:1.0'
+    compile 'com.github.barteksc:android-pdf-viewer:1.4.0'
+    compile 'cn.bingoogolapple:bga-banner:2.1.7@aar'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'cn.bingoogolapple:bga-adapter:1.1.8@aar'
+    compile files('libs/alipaySdk-20160516.jar')
+    compile project(':PushSDK')
+    compile 'com.android.support:design:24.2.0'
+    compile project(path: ':longImagelibrary')
+    compile project(':jcvideoplayer-lib')
+    compile 'com.facebook.fresco:fresco:0.9.0'
+    // compile 'com.laocaixw.suspendbuttonlayout:suspendbuttonlayout:1.0.0'
+    compile files('libs/bdocreadersdk.jar')
+    //sharesdk
+    compile name: 'SMSSDK-2.1.4', ext: 'aar'
+    compile 'com.github.maning0303:SwitcherView:v1.0.0'
+
+}

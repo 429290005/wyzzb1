@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical">
+ <RelativeLayout android:layout_width="wrap_content"
+                 android:layout_height="wrap_content">
+     <TextView
+         android:id="@+id/id_test_tv"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:text="刷题"
+         android:background="@drawable/guide_round_selector"
+         android:textColor="@color/color_theme"
+         android:padding="5dip"
+         android:textSize="12sp" />
+
+
+
+     <TextView
+         android:textColor="@color/color_tab_text"
+         android:id="@+id/id_answer_tv"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:text="课程"
+         android:layout_marginLeft="5dip"
+         android:layout_toRightOf="@+id/id_test_tv"
+         android:background="@drawable/guide_round_selector"
+         android:layout_centerVertical="true"
+         android:textSize="12sp"
+     />
+
+
+
+ </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/id_tab_line_iv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="tab"
+        android:background="@drawable/guide_round_selector" >
+    </ImageView>
+
+
+
+
+
+
+</LinearLayout>

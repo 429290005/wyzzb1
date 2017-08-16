@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scroll"
+        android:scrollbars="none"
+
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <RelativeLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/rl_user_imgbg_container"
+                android:layout_width="fill_parent"
+                android:layout_height="150dip">
+                <ImageView
+                    android:id="@+id/iv_user_imgbg"
+                    android:background="@color/blue_459fed"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="centerCrop" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/user_haveno_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+                <RelativeLayout
+                    android:id="@+id/rl_user_head_contanier"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true">
+
+                    <ImageView
+                        android:id="@+id/userinfo_headicon_nologin"
+
+                        android:layout_width="60.0dip"
+                        android:layout_height="60.0dip"
+                        android:layout_marginTop="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="centerCrop"  />
+                </RelativeLayout>
+                <TextView
+                    android:textSize="16.0sp"
+                    android:textColor="@color/white_ffffff"
+                    android:id="@+id/user_name_tv_nologin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+
+                    android:layout_below="@+id/rl_user_head_contanier"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/user_have_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_centerInParent="true">
+                <RelativeLayout
+                    android:id="@+id/rl_user_head_contanier1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true">
+
+                    <ImageView
+                        android:id="@+id/userinfo_headicon"
+                        android:layout_width="60.0dip"
+                        android:layout_height="60.0dip"
+
+                        android:layout_marginTop="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="centerCrop"  />
+                    <TextView
+                        android:textSize="16.0sp"
+                        android:textColor="@color/white_ffffff"
+                        android:id="@+id/user_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10.0dip"
+                        android:layout_below="@+id/userinfo_headicon"
+                        android:layout_centerHorizontal="true" />
+                    <ImageView
+                        android:id="@+id/vip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_below="@+id/userinfo_headicon"
+                        android:src="@drawable/hx"
+                        android:layout_toRightOf="@+id/user_name_tv" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/user_type_icon_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/rl_user_head_contanier1"
+                    android:layout_below="@+id/rl_user_head_contanier1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5.0dip"
+                    android:orientation="horizontal"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:id="@+id/user_fanscount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@id/rl_user_head_contanier1"
+                    android:textColor="@color/white_ffffff"
+                    android:textSize="12.0sp" />
+
+                <TextView
+                    android:id="@+id/user_focuscount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_user_head_contanier1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/user_fanscount"
+                    android:textColor="@color/white_ffffff"
+                    android:textSize="12.0sp" />
+
+                <TextView
+                    android:id="@+id/user_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_user_head_contanier1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/user_focuscount"
+                    android:textColor="@color/white_ffffff"
+                    android:textSize="12.0sp"/>
+
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/umeng_comm_setting"
+                android:padding="5.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:layout_marginRight="12.0dip"
+                android:src="@mipmap/xuetang_mine_setting"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/color_green_bg3"
+
+            android:layout_height="16dip" />
+        <RelativeLayout
+            android:id="@+id/umeng_comm_mine"
+            android:background="@drawable/selector_common_item_bg"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/rules_card_item_height"
+            >
+
+            <TextView
+                android:textColor="@color/rules_gray_333333"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/rules_content_left_margin"
+                android:text="会员中心"
+                android:textSize="16.0sp"
+                android:id="@+id/umeng_comm_my_notify"
+                android:drawableLeft="@mipmap/xuetang_mine_overcourse"
+                android:drawablePadding="10.0dip"
+                android:layout_centerVertical="true" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/rules_content_right_margin"
+                android:src="@mipmap/xuetang_right_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+            <View
+                android:background="@color/gray_e5e5e5"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="@dimen/rules_content_left_margin"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/umeng_comm_favortes"
+            android:background="@drawable/selector_common_item_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/rules_card_item_height">
+            <TextView
+                android:textColor="@color/rules_gray_333333"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/rules_content_left_margin"
+                android:text="离线课程"
+                android:textSize="16.0sp"
+                android:drawableLeft="@mipmap/xuetang_mine_coursecache"
+                android:drawablePadding="10.0dip"
+                android:layout_centerVertical="true" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/rules_content_right_margin"
+                android:src="@mipmap/xuetang_right_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+            <View android:background="@color/gray_e5e5e5"
+                  android:layout_width="fill_parent"
+                  android:layout_height="0.5dip"
+                  android:layout_marginLeft="@dimen/rules_content_left_margin"
+                  android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/umeng_comm_sponsor"
+            android:background="@drawable/selector_common_item_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/rules_card_item_height">
+            <TextView
+                android:textColor="@color/rules_gray_333333"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/rules_content_left_margin"
+                android:text="离线文档"
+                android:textSize="16.0sp"
+                android:drawableLeft="@mipmap/xuetang_mine_paperdownload"
+                android:drawablePadding="10.0dip"
+                android:layout_centerVertical="true" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/rules_content_right_margin"
+                android:src="@mipmap/xuetang_right_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+            <View
+                android:id="@+id/unReadSessionsCount"
+                android:layout_width="12px"
+                android:layout_height="12px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="32dp"
+                android:visibility="gone"
+                android:background="@drawable/umeng_comm_circle_shape" />
+            <View
+                android:background="@color/gray_e5e5e5"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="@dimen/rules_content_left_margin"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/color_green_bg3"
+
+            android:layout_height="16dip" />
+
+        <RelativeLayout
+            android:id="@+id/umeng_comm_mynotify"
+            android:background="@drawable/selector_common_item_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/rules_card_item_height">
+            <TextView
+                android:textColor="@color/rules_gray_333333"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/rules_content_left_margin"
+                android:text="通知"
+                android:textSize="16.0sp"
+                android:id="@+id/notify_text"
+                android:drawableLeft="@drawable/word_speak"
+                android:drawablePadding="10.0dip"
+                android:layout_centerVertical="true" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/rules_content_right_margin"
+                android:src="@mipmap/xuetang_right_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+            <View
+                android:id="@+id/umeng_comm_notify_badge_view"
+                android:layout_width="12px"
+                android:layout_height="12px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="32dp"
+                android:background="@drawable/umeng_comm_circle_shape" />
+            <View
+                android:background="@color/gray_e5e5e5"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="@dimen/rules_content_left_margin"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/color_green_bg3"
+
+            android:layout_height="16dip" />
+        <RelativeLayout
+            android:id="@+id/umeng_comm_pay"
+            android:background="@drawable/selector_common_item_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/rules_card_item_height">
+            <TextView
+                android:textColor="@color/rules_gray_333333"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/rules_content_left_margin"
+                android:text="积分充值"
+                android:textSize="16.0sp"
+                android:drawableLeft="@mipmap/xuetang_mine_coupon"
+                android:drawablePadding="10.0dip"
+                android:layout_centerVertical="true" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/rules_content_right_margin"
+                android:src="@mipmap/xuetang_right_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+            <View android:background="@color/gray_e5e5e5"
+                  android:layout_width="fill_parent"
+                  android:layout_height="0.5dip"
+                  android:layout_marginLeft="@dimen/rules_content_left_margin"
+                  android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

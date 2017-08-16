@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:id="@+id/layout_pay"
+        android:background="#ffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_alignParentBottom="true">
+        <View style="@style/divider_line" />
+        <TextView
+            android:textSize="14.0sp"
+            android:textColor="#404040"
+            android:gravity="center_vertical"
+            android:id="@+id/should_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="16.0dip"
+            android:text="应支付" />
+        <TextView
+            android:textSize="18.0sp"
+            android:textColor="#ff8f5d"
+            android:id="@+id/diamond_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_toRightOf="@+id/should_pay"
+            android:layout_centerVertical="true" />
+        <Button
+            android:textSize="14.0sp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:id="@+id/pay"
+            android:background="@color/green_888888"
+            android:padding="10.0dip" android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dip"
+            android:text="确认支付"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="pay" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/layout_pay"
+         >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/layout_deduction"
+                android:background="#ffffff"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1.0dip">
+                <RelativeLayout
+                    android:gravity="center_vertical"
+                    android:id="@+id/layout_voucher"
+                    android:background="?android:selectableItemBackground"
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClick">
+                    <TextView
+                        android:textSize="16.0sp"
+                        android:textColor="#404040"
+                        android:paddingLeft="16.0dip"
+                        android:paddingTop="12.0dip"
+                        android:paddingBottom="12.0dip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="代金券" />
+                    <TextView
+                        android:textSize="16.0sp"
+                        android:textColor="#ff8f5d"
+                        android:id="@+id/voucher_deduct"
+                        android:paddingLeft="5.0dip"
+                        android:paddingTop="12.0dip"
+                        android:paddingRight="10.0dip"
+                        android:paddingBottom="12.0dip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5.0dip"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/extra_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/layout_order_confirm"
+                android:background="@android:color/transparent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="14.0sp"
+                    android:textColor="@color/base_color_text_gray"
+                    android:paddingLeft="16.0dip"
+                    android:paddingRight="16.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:text="请填写邮寄信息" />
+                <LinearLayout
+                    style="@style/layout_order_info">
+                    <TextView
+                        android:text="真实姓名："
+                        style="@style/course_confirm_item_title" />
+                    <EditText
+                        android:id="@+id/recipient"
+                        android:hint="请输入姓名"
+                        android:inputType="textPhonetic"
+                        style="@style/course_confirm_edit_text" />
+                </LinearLayout>
+                <View style="@style/divider_line" />
+                <LinearLayout
+                    style="@style/layout_order_info">
+                    <TextView
+                        android:text="联系电话："
+                        style="@style/course_confirm_item_title" />
+                    <EditText
+                        android:id="@+id/phone"
+                        android:hint="请输入手机号"
+                        android:maxLength="11"
+                        android:inputType="phone"
+                        style="@style/course_confirm_edit_text" />
+                </LinearLayout>
+                <View style="@style/divider_line" />
+                <LinearLayout
+                    style="@style/layout_order_info">
+                    <TextView
+                        android:text="          QQ："
+                        style="@style/course_confirm_item_title" />
+                    <EditText
+                        android:id="@+id/qq"
+                        android:hint="请输入QQ号"
+                        android:maxLength="11"
+                        android:inputType="phone"
+                        style="@style/course_confirm_edit_text" />
+                </LinearLayout>
+                <View style="@style/divider_line" />
+                <LinearLayout style="@style/layout_order_info">
+                    <TextView
+                        android:text="邮寄地址："
+                        style="@style/course_confirm_item_title" />
+                    <EditText
+                        android:gravity="top"
+                        android:id="@+id/address"
+                        android:hint="请输入邮寄地址"
+                        android:scrollHorizontally="false"
+                        android:singleLine="false"
+                        android:inputType="textMultiLine"
+                        style="@style/course_confirm_edit_text" />
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/divider_line" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/course_confirm_item_title"
+                    android:text="备注"
+                    android:paddingLeft="16dip"/>
+
+                <EditText
+                    android:textSize="16.0dip"
+                          android:textColor="#404040"
+                          android:textColorHint="#808080"
+                    android:gravity="top"
+                    android:id="@+id/remark"
+                    android:background="#ffffff"
+                    android:padding="16.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="未尽事宜请备注留言"
+                    android:minLines="3"
+                    android:scrollHorizontally="false"
+                    android:singleLine="false"
+                    android:inputType="textMultiLine" />
+            </LinearLayout>
+            <View style="@style/divider_line" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="#ffffff"
+                android:paddingLeft="16.0dip"
+                android:paddingTop="10.0dip"
+                android:paddingRight="16.0dip"
+                android:paddingBottom="5.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:layout_marginBottom="10.0dip">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+                    <TextView
+                        android:textSize="16.0sp"
+                        android:textColor="#404040"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="商品金额" />
+                    <TextView
+                        android:textSize="16.0sp"
+                        android:textColor="#404040"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10.0dip"
+                        android:visibility="gone"
+                        android:text="折扣优惠" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="right"
+                    android:orientation="vertical"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+                    <TextView
+                        android:textSize="16.0sp"
+                        android:textColor="#ff8f5d"
+                        android:id="@+id/course_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textSize="16.0sp"
+                        android:textColor="#ff8f5d"
+                        android:id="@+id/discount_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10.0dip" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                android:textSize="16.0sp"
+                android:textColor="#404040"
+                android:id="@+id/text_voucher_deduct1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16.0dip"
+                android:visibility="gone"
+                android:text="折扣详情：" />
+            <TextView
+                android:textSize="16.0sp"
+                android:paddingLeft="16.0dip"
+                android:paddingRight="16dip"
+                android:visibility="gone"
+                android:id="@+id/text_voucher_deduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:textColor="#ff8f5d"
+                android:text="50-200积分9.9折； 200-300积分9.5折；300-500积分9折；500-800积分是8.5折；800积分以上8折；" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

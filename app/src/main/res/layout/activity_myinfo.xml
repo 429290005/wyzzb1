@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+              android:background="@color/gray_eeeeee"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@+id/umeng_comm_title_bar_root"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+       android:background="@color/white_ffffff"
+    >
+
+        <ImageView
+            android:id="@+id/umeng_comm_setting_back"
+            android:src="@drawable/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+
+            android:padding="20px"
+            android:scaleType="centerInside"
+        />
+
+        <TextView
+            android:id="@+id/umeng_comm_setting_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:maxWidth="320px"
+            android:singleLine="true"
+            android:text="个人资料"
+
+            android:textColor="#666666"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/umeng_comm_save_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="48px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+           android:text="保存"
+            android:gravity="center"
+            android:textColor="@color/color_theme"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/activity_myinfo_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10.0dip"
+        android:fillViewport="true">
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <View
+                android:background="@color/gray_eeeeee"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+            <LinearLayout
+                android:gravity="center_vertical"
+
+                android:background="@drawable/selector_common_item_bg"
+                android:clickable="true"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/rules_card_item_height"
+
+            >
+                <EditText
+                    android:id="@+id/setting_username"
+                    android:ellipsize="end"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip"
+                    android:hint="姓名"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:singleLine="true"
+                    android:background="@null"
+                    android:layout_weight="1.0"
+                    style="@style/perfectinfo_input_style" />
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10.0dip"
+                    android:text=""
+                    android:singleLine="true"
+                    android:drawableRight="@mipmap/xuetang_right_arrow"
+                    android:drawablePadding="10.0dip"
+                    style="@style/perfectinfo_input_style" />
+            </LinearLayout>
+
+            <View
+                android:background="@color/gray_eeeeee"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:id="@+id/ll_activity_myinfo_locationlayout"
+                android:background="@drawable/selector_common_item_bg"
+                android:clickable="true"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/rules_card_item_height">
+                <TextView
+                    android:ellipsize="end"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip"
+                    android:hint="性别"
+                    style="@style/perfectinfo_input_style"
+                    android:singleLine="true"
+                    android:layout_weight="1.0" />
+                <RadioGroup
+                    android:id="@+id/genderGroup"
+
+                    android:gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/gendername_tag"
+
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/maleButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:button="@drawable/fragment_fill_in_info_radio_btn"
+                        android:checked="true"
+
+                        style="@style/perfectinfo_input_style"
+                        android:drawablePadding="5dp"
+                        android:text="男" />
+
+                    <RadioButton
+                        android:id="@+id/femaleButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        style="@style/perfectinfo_input_style"
+                        android:button="@drawable/fragment_fill_in_info_radio_btn"
+
+                        android:drawablePadding="5dp"
+                        android:text="女"
+
+                    />
+                </RadioGroup>
+            </LinearLayout>
+            <View
+                android:background="@color/gray_eeeeee"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:id="@+id/ll_activity_myinfo_phonelayout"
+                android:background="@drawable/selector_common_item_bg"
+                android:clickable="true"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/rules_card_item_height"
+                android:layout_marginTop="@dimen/rules_item_card_margin"
+                >
+                <EditText
+                    android:id="@+id/setting_phone"
+                    android:ellipsize="end"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip"
+                     android:enabled="false"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:singleLine="true"
+                    android:background="@null"
+                    android:layout_weight="1.0"
+                    style="@style/perfectinfo_input_style" />
+                <TextView
+                    android:id="@+id/tv_activity_myinfo_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10.0dip"
+                    android:text=""
+                    android:singleLine="true"
+                    android:drawableRight="@mipmap/xuetang_right_arrow"
+                    android:drawablePadding="10.0dip"
+                    style="@style/perfectinfo_input_style" />
+            </LinearLayout>
+            <View
+                android:background="@color/gray_eeeeee"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:id="@+id/ll_activity_myinfo_modifypasslayout"
+                android:background="@drawable/selector_common_item_bg"
+                android:clickable="true"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/rules_card_item_height">
+                <EditText
+                    android:id="@+id/setting_qqname"
+                    android:ellipsize="end"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip"
+                    android:hint="请输入QQ号"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+
+                    android:background="@null"
+                    android:layout_weight="1.0"
+                    style="@style/perfectinfo_input_style" />
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10.0dip"
+                    android:text=""
+                    android:singleLine="true"
+                    android:drawableRight="@mipmap/xuetang_right_arrow"
+                    android:drawablePadding="10.0dip"
+                    style="@style/perfectinfo_input_style" />
+
+            </LinearLayout>
+            <View
+                android:background="@color/gray_eeeeee"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:id="@+id/ll_activity_myinfo_undergraduate_schoollayout"
+                android:background="@drawable/selector_common_item_bg"
+                android:clickable="true"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="@dimen/rules_item_card_margin"
+                android:layout_height="@dimen/rules_card_item_height">
+                <TextView
+                    android:id="@+id/setting_schoolname1"
+                    android:ellipsize="end"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip"
+                    android:hint="专科院校"
+                    style="@style/perfectinfo_input_style"
+                    android:singleLine="true"
+                    android:layout_weight="1.0" />
+                <TextView
+                    android:id="@+id/setting_schoolname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10.0dip"
+                    android:text="@string/please_select_string"
+                    android:singleLine="true"
+                    android:drawableRight="@mipmap/xuetang_right_arrow"
+                    android:drawablePadding="10.0dip"
+                    android:layout_weight="0.0"
+                    style="@style/perfectinfo_input_style" />
+            </LinearLayout>
+            <View
+                android:background="@color/gray_eeeeee"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:id="@+id/ll_activity_myinfo_yearlayout"
+                android:background="@drawable/selector_common_item_bg"
+                android:clickable="true"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/rules_card_item_height"
+               >
+                <TextView
+                    android:id="@+id/setting_yearname1"
+                    android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="15.0dip"
+                          android:hint="转本年份"
+                    style="@style/perfectinfo_input_style"
+                          android:layout_weight="1.0" />
+                <TextView
+                    android:id="@+id/setting_yearname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10.0dip"
+                    android:text="@string/please_select_string"
+                    android:singleLine="true"
+                    android:drawableRight="@mipmap/xuetang_right_arrow"
+                    android:drawablePadding="10.0dip"
+                    style="@style/perfectinfo_input_style" />
+            </LinearLayout>
+            <View
+                android:background="@color/gray_eeeeee"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:id="@+id/ll_activity_myinfo_majorlayout"
+                android:background="@drawable/selector_common_item_bg"
+                android:clickable="true"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/rules_card_item_height">
+                <TextView
+                    android:id="@+id/setting_typename1"
+                    android:ellipsize="end"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip"
+                    android:hint="报考类别"
+                    style="@style/perfectinfo_input_style"
+
+                    android:layout_weight="1.0"
+                    />
+                <TextView
+                    android:id="@+id/setting_typename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10.0dip"
+                    android:text="@string/please_select_string"
+                    android:singleLine="true"
+                    android:drawableRight="@mipmap/xuetang_right_arrow"
+                    android:drawablePadding="10.0dip"
+                    style="@style/perfectinfo_input_style" />
+            </LinearLayout>
+            <View
+                android:background="@color/gray_eeeeee"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:id="@+id/ll_activity_myinfo_masterschoollayout"
+                android:background="@drawable/selector_common_item_bg"
+                android:clickable="true"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/rules_card_item_height"
+
+            >
+                <TextView
+                    android:id="@+id/setting_wantname1"
+                    android:ellipsize="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15dip"
+                    android:hint="报考院校"
+                    android:singleLine="true"
+                    android:background="@null"
+                    style="@style/perfectinfo_input_style"
+                    android:layout_weight="1.0"
+                    />
+                <TextView
+                    android:id="@+id/setting_wantname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10.0dip"
+                    android:text="@string/please_select_string"
+                    android:singleLine="true"
+                    android:drawableRight="@mipmap/xuetang_right_arrow"
+                    android:drawablePadding="10.0dip"
+                    style="@style/perfectinfo_input_style" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

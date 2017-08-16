@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="48dp"
+       android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="英语"
+        android:textColor="@color/color_tabup_text" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="计算机"
+        android:textColor="@color/color_tabup_text" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+
+        android:gravity="center"
+        android:text="高数"
+        android:textColor="@color/color_tabup_text" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="语文"
+        android:textColor="@color/color_tabup_text" />
+
+</merge>

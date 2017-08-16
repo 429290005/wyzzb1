@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.song.zzb.wyzzb"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:name="com.song.zzb.wyzzb.util.MyApplication"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity android:name="com.song.zzb.wyzzb.ui.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.song.zzb.wyzzb.ui.GuideActivity"> </activity>
+        <activity android:name="com.song.zzb.wyzzb.ui.MainActivity"> </activity>
+        <activity android:name="com.song.zzb.wyzzb.ui.GoodsDetailActivity"> </activity>
+        <activity android:name="com.song.zzb.wyzzb.pay.GoodsPayDemoActivity"> </activity>
+        <activity android:name="com.song.zzb.wyzzb.ui.DocDetailActivity"> </activity>
+        <activity android:name="com.song.zzb.wyzzb.ui.DocViewActivity"> </activity>
+        <activity android:name="com.song.zzb.wyzzb.ui.PersonInforActivity"> </activity>
+        <activity android:name="com.song.zzb.wyzzb.ui.HelpActivity"> </activity>
+        <activity android:name="com.song.zzb.wyzzb.pay.PayDemoActivity"> </activity>
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="56a962cbe0f55a0bf90013ef">
+        </meta-data>
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="d87ce3fac5dc2480faecbd924be842a3">
+        </meta-data>
+    </application>
+
+</manifest>

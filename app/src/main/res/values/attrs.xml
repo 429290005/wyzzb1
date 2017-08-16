@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr format="integer" name="duration"/>
+
+
+    <declare-styleable name="customTextView">
+
+    <attr name="duration"/>
+
+     </declare-styleable>
+
+</resources>

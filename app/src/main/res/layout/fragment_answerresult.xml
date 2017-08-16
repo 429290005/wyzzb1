@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+              >
+    <include
+        android:id="@+id/fragment_actionbar"
+        layout="@layout/actionbar"
+
+        />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_actionbar"
+        android:id="@+id/ly_title"
+        android:background="@color/color_theme"
+        android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:layout_marginBottom="10dip"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/new_report_failed"
+                android:src="@drawable/new_report_normal"/>
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dip"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="答对"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:id="@+id/correct_tv"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:layout_marginLeft="4dip"
+                android:layout_marginRight="4dip"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="道题"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dip"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="共"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:id="@+id/tv_sum"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="道"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <View
+        android:id="@+id/divide_2"
+        android:layout_width="fill_parent"
+        android:background="@color/color_green_bg3"
+        android:layout_height="8dp"
+        android:layout_below="@+id/ly_title"
+        />
+    <com.song.zzb.wyzzb.ui.view.AutofitRecyclerView
+
+        android:layout_below="@+id/divide_2"
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/item_margin"
+        android:columnWidth="@dimen/column_width"
+        android:layout_marginBottom="48dip"
+        android:clipToPadding="false"/>
+    <LinearLayout
+        android:id="@+id/left_main_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/home_item_color_bg"
+
+        >
+        <TextView
+            android:id="@+id/tv_all"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_weight="1.0"
+            android:text="查看解析"
+            android:textColor="#666666"
+            android:gravity="center"
+            android:textSize="17sp"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

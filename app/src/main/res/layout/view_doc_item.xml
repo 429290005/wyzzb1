@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:paddingLeft="15.0dip"
+                    android:paddingTop="12.0dip"
+                    android:paddingBottom="12.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+        <TextView
+            android:textSize="15.0sp"
+            android:textColor="@color/gray_333333"
+            android:id="@+id/doc_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="刑法学刑法学刑法学刑法学"
+            android:layout_toLeftOf="@+id/doc_item_image"
+            android:layout_alignParentLeft="true" />
+        <TextView
+            android:textSize="11.0sp"
+            android:textColor="@color/gray_999999"
+            android:id="@+id/doc_item_downloadcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:text="18888次下载"
+            android:lines="1"
+            android:layout_toLeftOf="@+id/doc_item_image"
+            android:layout_below="@+id/doc_item_title"
+            android:layout_alignParentLeft="true" />
+        <TextView
+            android:textColor="#fffd6f24"
+            android:id="@+id/doc_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9.0dip"
+            android:text="¥ 20000.00"
+            android:layout_below="@+id/doc_item_downloadcount" />
+        <TextView
+            android:id="@+id/doc_item_purchase_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9.0dip"
+            android:text="¥ 3000.00"
+            android:layout_toRightOf="@+id/doc_item_price"
+            android:layout_alignBaseline="@+id/doc_item_price" />
+        <ImageView
+            android:id="@id/doc_item_image"
+            android:layout_width="91.0dip"
+            android:layout_height="69.0dip"
+            android:layout_marginTop="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:src="@drawable/kaoyan_common_default"
+            android:visibility="gone"
+            android:scaleType="centerInside"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View
+        android:background="@color/gray_dddddd"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip" />
+</LinearLayout>
